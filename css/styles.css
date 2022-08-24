@@ -46,7 +46,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -108,8 +108,7 @@ font-style: normal;
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    margin-left: auto;
     
 }
 .page-navigation {
@@ -122,6 +121,8 @@ font-style: normal;
     display: flex;
     align-items: center;
     column-gap: 50px;
+    margin-left: auto;
+   
 }
 .site-nav {
     display: flex;
@@ -139,9 +140,7 @@ padding-bottom: 200px;
 
 }
 .hero-box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
+    
 }
 .head-title {
 color: var(--background-color);
@@ -151,6 +150,8 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+width: 696px;
+margin: 0 auto;
 
 }
 
@@ -164,15 +165,11 @@ font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.06em;
 margin-top: 30px;
-width: 216px;
-height: 60px;
+min-width: 216px;
 border-radius: 4px;
 display: inline-block;
-
-
-
-
-
+padding: 10px 32px;
+border: none;
    }
 .button:hover 
 .button:focus {
@@ -202,6 +199,9 @@ text-align: center;
 margin-bottom: 50px;
 }
 /* чим ми займаємось */
+.box {
+    padding-top: 0;
+}
 .photo-card{
     display: flex;
     gap: 30px;
@@ -257,7 +257,6 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
-margin-top: 30px;
 margin-bottom: 10px;
 }
 .team .position {
@@ -267,10 +266,16 @@ line-height: 1.19;
 text-align: center;
 margin-bottom: 30px;
 }
+.information-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
  
 /* футер */
 .basement {
 background-color: var(--dark-background-color);
+padding: 60px 0;
     }
 .part-logo {
     color: var(--background-color);
@@ -289,18 +294,24 @@ background-color: var(--dark-background-color);
     color: var(--accent-color);
 }
 .footer-navigation {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 215px;
-    margin-right: 1154px;
+  display: block;
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+
+}
+.adress-nav {
+    margin-top: 20px;
 }
 .contacts-footer {
-    display: inline-block;
-    margin-top: 20px;
+      display: block; 
+      margin-top: 20px;
     }
-    .mail-footer {
-     margin-top: 9px;
-     margin-bottom: 9px;
+    .contacts-footer .mail-footer {
+    color: var(--reserve-background-color);
+    }
+    .mail {
+        margin-top: 9px;
+        margin-bottom: 9px;
     }
 
 
@@ -308,8 +319,7 @@ background-color: var(--dark-background-color);
     
   
     .filters-navigations {
-        padding-top: 94px;
-        padding-bottom: 34px;
+                
     }
     
 
@@ -317,9 +327,8 @@ background-color: var(--dark-background-color);
         display: flex;
         justify-content: center;
         gap: 8px;
-        margin-bottom: 34px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 50px;
+       
     
     }
     .filters-item {
@@ -337,6 +346,7 @@ background-color: var(--dark-background-color);
         text-align: center;
         letter-spacing: 0.03em; 
         border-radius: 4px; 
+        padding: 6px 22px;
     }
     .filters .filters-title:hover,
     .filters .filters-title:focus {
@@ -350,8 +360,7 @@ background-color: var(--dark-background-color);
        
     }
     .project {
-        background-color: var(--background-color);
-        padding-bottom: 20px;
+        
     }
     .project .project-title {
     color: var(--title-text-color);
@@ -359,19 +368,18 @@ background-color: var(--dark-background-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
+    
     }
     .project .project-group {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.875;
-    margin-left: 24px;
-    margin-right: 24px;
+    
     }
     .project-frame {
-        border: 1px solid var(--other-color);
+    
+    padding: 20px 24px;
+    border: 1px solid var(--other-color);
     }
     

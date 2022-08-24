@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -16,7 +16,6 @@
 <body>
     <header class="page-header">
         <div class="container header-container">
-
             <nav class="page-navigation">
                 <a href="./index.html" class="logo link"><span class="half-logo">Web</span>Studio</a>
                 <ul class="site-nav">
@@ -95,23 +94,31 @@
                 <ul class="team">
                     <li class="card">
                         <img src="images/img1.jpg" alt="Усміхнений хлопець в окулярах" width="270" height="260" />
-                        <h3 class="team-member">Ігор Дем'яненко</h3>
-                        <p class="position">Product Designer</p>
+                        <div class="information-team">
+                            <h3 class="team-member">Ігор Дем'яненко</h3>
+                            <p class="position">Product Designer</p>
+                        </div>
                     </li>
                     <li class="card">
                         <img src="images/img2.jpg" alt="Усміхнена дівчина в окулярах" width="270" height="260" />
-                        <h3 class="team-member">Ольга Рєпіна</h3>
-                        <p class="position">Frontend Developer</p>
+                        <div class="information-team">
+                            <h3 class="team-member">Ольга Рєпіна</h3>
+                            <p class="position">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="card">
                         <img src="images/img3.jpg" alt="Усміхнений хлопець" width="270" height="260" />
-                        <h3 class="team-member">Микола Тарасов</h3>
-                        <p class="position">Marketing</p>
+                        <div class="information-team">
+                            <h3 class="team-member">Микола Тарасов</h3>
+                            <p class="position">Marketing</p>
+                        </div>
                     </li>
                     <li class="card">
                         <img src="images/img4.jpg" alt="Хлопець в окулярах" width="270" height="260" />
-                        <h3 class="team-member">Михайло Єрмаков</h3>
-                        <p class="position">UI Designer</p>
+                        <div class="information-team">
+                            <h3 class="team-member">Михайло Єрмаков</h3>
+                            <p class="position">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -119,16 +126,18 @@
         </section>
     </main>
     <footer class="basement">
-        <div class="footer-navigation">
+        <div class="container footer-navigation">
             <a href="./index.html" class="part-logo link"><span class="half-logo">Web</span>Studio</a>
-            <address>
+            <address class="adress-nav">
                 <ul class="contacts contacts-footer">
                     <li>
                         <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                             rel="noopener noreferrer nofollow" class="adres link">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
-                    <li><a href="emailto:info@devstudio.com" class="adres link mail-footer">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="adres link">+38 096 111 11 11</a></li>
+                    <li class="mail"><a href="mailto:info@devstudio.com"
+                            class="adres link mail-footer">info@devstudio.com</a>
+                    </li>
+                    <li><a href="tel:+380961111111" class="adres link mail-footer">+38 096 111 11 11</a></li>
                 </ul>
             </address>
         </div>
